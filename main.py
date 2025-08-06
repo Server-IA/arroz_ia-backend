@@ -48,7 +48,7 @@ from src.routes.totalcostsRoutes import router as totalcosts_router
 from src.routes.auditRoutes import AUDIT_ROUTES
 
 # Inicializar la aplicación FastAPI
-app = FastAPI()
+app = FastAPI(root_path="/arroz_ia")
 
 # Cargar variables de entorno desde el archivo .env
 load_dotenv()
